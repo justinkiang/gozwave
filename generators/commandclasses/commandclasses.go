@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 )
 
 type templates struct {
@@ -228,7 +228,7 @@ func StringToByte(s string) byte {
 
 var templ = `package {{.Package}}
 import (
-	"github.com/stampzilla/gozwave/protocol"
+	"github.com/justinkiang/gozwave/protocol"
 )
 
 var definitions = map[Definition][]*CommandClass{

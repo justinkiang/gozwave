@@ -1,6 +1,6 @@
 package database
 
-import "github.com/stampzilla/gozwave/commands"
+import "github.com/justinkiang/gozwave/commands"
 
 type CommandClass struct {
 	ID commands.ZWaveCommand

@@ -3,7 +3,7 @@ package gozwave
 import (
 	"testing"
 
-	"github.com/stampzilla/gozwave/serialapi"
+	"github.com/justinkiang/gozwave/serialapi"
 	"github.com/stretchr/testify/assert"
 )
 

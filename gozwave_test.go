@@ -8,8 +8,8 @@ import (
 	"text/tabwriter"
 	"time"
 
+	"github.com/justinkiang/gozwave/serialapi"
 	"github.com/sirupsen/logrus"
-	"github.com/stampzilla/gozwave/serialapi"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -58,7 +58,7 @@ func reply(t *testing.T, c chan []byte, w chan string) {
 			"0125010205001d8000000000000000000000000000000000000000000000000000000000050044", // Answer with node 8 active
 		},
 		"0104004108b2": []string{ // Request node information node 8
-			"06", // Ack
+			"06",                   // Ack
 			"01080141539c0004403c", // Answer with node information
 		},
 	}

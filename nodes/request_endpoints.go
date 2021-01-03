@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/justinkiang/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands/reports"
 	"github.com/sirupsen/logrus"
-	"github.com/stampzilla/gozwave/commands"
-	"github.com/stampzilla/gozwave/commands/reports"
 )
 
 func (n *Node) RequestEndpoints() error {
@@ -28,7 +28,7 @@ func (n *Node) RequestEndpoints() error {
 	cmd := commands.NewRaw(
 		[]byte{
 			commands.MultiInstance, // Command class
-			0x07, // Command: MultiInstanceCmd_Get
+			0x07,                   // Command: MultiInstanceCmd_Get
 			//byte(v.ID),
 			0x25, // TransmitOptions?
 			//0x23, // Callback?

@@ -3,7 +3,7 @@ package reports
 import (
 	"testing"
 
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 	"github.com/stretchr/testify/assert"
 )
 

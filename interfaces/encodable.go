@@ -3,8 +3,8 @@ package interfaces
 import (
 	"time"
 
-	"github.com/stampzilla/gozwave/commands/reports"
-	"github.com/stampzilla/gozwave/serialapi"
+	"github.com/justinkiang/gozwave/commands/reports"
+	"github.com/justinkiang/gozwave/serialapi"
 )
 
 type Encodable interface {

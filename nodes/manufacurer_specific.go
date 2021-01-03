@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/stampzilla/gozwave/commands"
-	"github.com/stampzilla/gozwave/commands/reports"
+	"github.com/justinkiang/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands/reports"
 )
 
 type ManufacurerSpecific struct {
@@ -15,7 +15,7 @@ func (n *Node) RequestManufacturerSpecific() (*reports.ManufacturerSpecific, err
 	cmd := commands.NewRaw(
 		[]byte{
 			commands.ManufacturerSpecific, // Command
-			0x04, // MANUFACTURER_SPECIFIC_GET
+			0x04,                          // MANUFACTURER_SPECIFIC_GET
 			0x00,
 			//0x05, // TransmitOptions?
 			//0x23, // Callback?

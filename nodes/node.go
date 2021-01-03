@@ -5,13 +5,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/justinkiang/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands/reports"
+	"github.com/justinkiang/gozwave/database"
+	"github.com/justinkiang/gozwave/events"
+	"github.com/justinkiang/gozwave/interfaces"
+	"github.com/justinkiang/gozwave/serialapi"
 	"github.com/sirupsen/logrus"
-	"github.com/stampzilla/gozwave/commands"
-	"github.com/stampzilla/gozwave/commands/reports"
-	"github.com/stampzilla/gozwave/database"
-	"github.com/stampzilla/gozwave/events"
-	"github.com/stampzilla/gozwave/interfaces"
-	"github.com/stampzilla/gozwave/serialapi"
 )
 
 func New(address int) *Node {

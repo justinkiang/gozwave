@@ -1,6 +1,6 @@
 package events
 
-import "github.com/stampzilla/gozwave/serialapi"
+import "github.com/justinkiang/gozwave/serialapi"
 
 type NodeDiscoverd struct {
 	Address int

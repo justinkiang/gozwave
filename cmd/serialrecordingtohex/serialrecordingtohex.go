@@ -10,7 +10,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/stampzilla/gozwave/serialrecorder"
+	"github.com/justinkiang/gozwave/serialrecorder"
 )
 
 var file string

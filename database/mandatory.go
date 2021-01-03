@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/stampzilla/gozwave/protocol"
+	"github.com/justinkiang/gozwave/protocol"
 )
 
 var definitions = map[Definition][]*CommandClass{

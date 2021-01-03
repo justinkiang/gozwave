@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 )
 
 func (n *Node) RequestStates() error {
@@ -17,8 +17,8 @@ func (n *Node) RequestStates() error {
 		case commands.SwitchBinary:
 			cmd := commands.NewRaw([]byte{
 				commands.SwitchBinary, // Command class
-				0x02, // Command: GET
-				0x25, // TransmitOptions?
+				0x02,                  // Command: GET
+				0x25,                  // TransmitOptions?
 				//0x23, // Callback?
 			})
 			cmd.SetNode(n.Id)
@@ -26,8 +26,8 @@ func (n *Node) RequestStates() error {
 		case commands.SwitchMultilevel:
 			cmd := commands.NewRaw([]byte{
 				commands.SwitchMultilevel, // Command class
-				0x02, // Command: GET
-				0x25, // TransmitOptions?
+				0x02,                      // Command: GET
+				0x25,                      // TransmitOptions?
 				//0x23, // Callback?
 			})
 			cmd.SetNode(n.Id)
@@ -35,8 +35,8 @@ func (n *Node) RequestStates() error {
 		case commands.SensorMultiLevel:
 			cmd := commands.NewRaw([]byte{
 				commands.SensorMultiLevel, // Command class
-				0x01, // Command: SupportedGet
-				0x25, // TransmitOptions?
+				0x01,                      // Command: SupportedGet
+				0x25,                      // TransmitOptions?
 				//0x23, // Callback?
 			})
 			cmd.SetNode(n.Id)

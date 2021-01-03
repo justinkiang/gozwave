@@ -1,8 +1,8 @@
 package serialapi
 
 import (
-	"github.com/stampzilla/gozwave/commands"
-	"github.com/stampzilla/gozwave/commands/reports"
+	"github.com/justinkiang/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands/reports"
 )
 
 type FuncApplicationCommandHandler struct {

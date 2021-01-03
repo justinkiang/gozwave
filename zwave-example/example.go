@@ -14,9 +14,9 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/stampzilla/gozwave"
-	"github.com/stampzilla/gozwave/events"
-	"github.com/stampzilla/gozwave/nodes"
+	"github.com/justinkiang/gozwave"
+	"github.com/justinkiang/gozwave/events"
+	"github.com/justinkiang/gozwave/nodes"
 )
 
 var port string

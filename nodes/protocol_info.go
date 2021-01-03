@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/justinkiang/gozwave/serialapi"
 	"github.com/sirupsen/logrus"
-	"github.com/stampzilla/gozwave/serialapi"
 )
 
 func (n *Node) ProtocolInfo() *serialapi.FuncGetNodeProtocolInfo {

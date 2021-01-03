@@ -3,7 +3,7 @@ package reports
 import (
 	"fmt"
 
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 )
 
 // SwitchBinaryV1 is sent from a zwave node to advertise the status of a device with On/Off or

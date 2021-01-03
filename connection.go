@@ -5,11 +5,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/justinkiang/gozwave/commands/reports"
+	"github.com/justinkiang/gozwave/interfaces"
+	"github.com/justinkiang/gozwave/serialapi"
 	"github.com/pborman/uuid"
 	"github.com/sirupsen/logrus"
-	"github.com/stampzilla/gozwave/commands/reports"
-	"github.com/stampzilla/gozwave/interfaces"
-	"github.com/stampzilla/gozwave/serialapi"
 )
 
 type Connection struct {

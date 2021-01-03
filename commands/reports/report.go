@@ -3,7 +3,7 @@ package reports
 import (
 	"fmt"
 
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 )
 
 type Report interface {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/stampzilla/gozwave/commands"
+	"github.com/justinkiang/gozwave/commands"
 )
 
 // SwitchMultilevelV1 is sent by a zwave node to advertise the status of a multilevel device.
