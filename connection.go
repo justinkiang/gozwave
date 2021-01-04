@@ -210,7 +210,7 @@ func (conn *Connection) Reader() error {
 				logrus.Errorf("%s - %d", err.Error(), l)
 			}
 
-			if l == 1 {
+			if l == 1 && msg != nil {
 				for index, c := range conn.inFlight {
 					conn.RLock()
 					if c.uuid == conn.lastCommand {
